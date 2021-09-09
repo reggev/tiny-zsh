@@ -14,9 +14,9 @@ function get_pwd() {
 }
 
 PROMPT='%m:%{$fg[white]%}$(get_pwd)%{$reset_color%}$ '
-RPROMPT='$(git_prompt_info)%{$reset_color%}'
+RPROMPT='$(git_prompt_info) %{$FG[057]%}[%D{%L:%M}]%{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[057]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$FG[105]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
 # turn these on if you like to have status shown next to the branch name
